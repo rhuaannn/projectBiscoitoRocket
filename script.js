@@ -16,7 +16,7 @@ const message = [
 
 biscoitoClicked.addEventListener("click", () => {
   handleClickAdd();
-  onClickObterAleatorio()
+  onClickObterAleatorio();
 });
 
 const handleClickAdd = () => {
@@ -26,13 +26,12 @@ const handleClickAdd = () => {
   main.classList.add("bg");
 };
 
-function getRandomMessage(array) {
+const getRandomMessage = (array) => {
   const randomIndex = Math.floor(Math.random() * array.length);
   return array[randomIndex];
-}
+};
 
-function onClickObterAleatorio() {
+const onClickObterAleatorio = () => {
   let elementoAleatorio = getRandomMessage(message);
   pSorted.textContent = elementoAleatorio.phrase;
-
-}
+};
