@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+ body{
+  background: linear-gradient(45deg, #190361 0%, #b0f 100%) no-repeat center
+  center;
+ }
+.hiden {
+  display: none;
+  flex-direction: row;
+}
+.bg{
+  background: linear-gradient(45deg, #715cb6 0%, rgb(148, 9, 199) 100%);  
+}
+.flex {
+  display: flex;
+  border-radius: 4px;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 42.8rem;
+  height: 100vh;
+  max-height: 56.4rem;
+  background-color: #f1f1f1;
+  overflow-y: hidden;
+  z-index: 200;
+  animation: skew 3s infinite;
+  transform: skew(10deg);
+  animation-direction: alternate;
+}
+@keyframes skew {
+  0% {
+    transform: skew(1deg, 1deg);
+  }
+  100% {
+    transform: skew(-1deg, -1deg);
+  }
+}
+
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.s-principal {
+  background-color: #f1f1f1;
+  border-radius: 0.4rem;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.8);
+}
+.container {
+  flex-direction: column;
+  max-width: 300px;
+  max-height: 312px;
+  margin: 48px 64px;
+  transition: all .3;
+}
+
+h1 {
+  text-align: center;
+  color: #34355b;
+  font-size: 2.4rem;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+  padding-bottom: 1.4rem;
+}
+p {
+  margin-bottom: 2.6rem;
+  text-align: center;
+  color: #34355b;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-family: "Inter";
+}
+.icon {
+  cursor: pointer;
+}
+.image {
+  max-width: 26.4rem;
+  max-height: 20rem;
+}
+
+.container2 {
+  display: none;
+ 
+ 
+}
+ 
+.content {
+  width: 100%;
+  max-width: 30rem;
+  height: 46.8rem;
+  display: flex;
+  margin: 4.8rem 6.4rem;
+}
+.text {
+  width: 100%;
+  max-width: 29.7rem;
+  max-height: 58px;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.msg {
+  max-width: 27.3rem;
+  max-height: 8.7rem;
+  padding-top: 2.7rem;
+  margin: 0 auto;
+}
+.p-sorted {
+  font-family: "Dancing Script", cursive;
+  font-size: 24px;
+  z-index: 100;
+  width: 29.3rem;
+  height: 10.7rem;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.5);
+  background-color: #e4edf1;
+}
+
+.image {
+  display: flex;
+  max-width: 15rem;
+  max-height: 10.8rem;
+  margin-top: 148px;
+}
